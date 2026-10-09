@@ -121,7 +121,6 @@ select.form-control{background-image:url("data:image/svg+xml,%3Csvg xmlns='http:
 .pw-strength-bar.active-mid{background:var(--amber-500)}
 .pw-strength-bar.active-good{background:var(--green-500)}
 
-/* HEADER — fixed responsive */
 #public-header{position:sticky;top:0;z-index:100;background:rgba(255,255,255,0.92);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid var(--border)}
 [data-theme="dark"] #public-header{background:rgba(6,15,31,0.9)}
 .nav{display:flex;align-items:center;justify-content:space-between;height:var(--header-h);gap:16px}
@@ -135,7 +134,6 @@ select.form-control{background-image:url("data:image/svg+xml,%3Csvg xmlns='http:
 .nav-actions{display:flex;align-items:center;gap:8px;flex-shrink:0}
 .menu-toggle{display:none;background:none;border:none;color:var(--text-primary);font-size:22px;padding:8px;cursor:pointer}
 
-/* MOBILE HEADER — clean stack */
 @media(max-width:1024px){
   .nav-links{display:none}
   .menu-toggle{display:block}
@@ -213,13 +211,11 @@ select.form-control{background-image:url("data:image/svg+xml,%3Csvg xmlns='http:
 .feature h3{margin-bottom:10px;font-size:16px}
 .feature p{font-size:13.5px;line-height:1.65}
 
-/* 4-STEP HOW IT WORKS — proper responsive */
 .steps-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
 .steps-grid .feature{padding:24px 20px}
 .steps-grid .feature h3{font-size:15px;margin-bottom:8px}
 .steps-grid .feature p{font-size:13px}
 
-/* PLANS */
 .plans-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;align-items:start}
 .plan{padding:32px 26px;border-radius:var(--r-xl);background:var(--bg-card);border:1px solid var(--border);position:relative}
 .plan.featured{border-color:var(--gold-500);background:linear-gradient(180deg,rgba(201,169,97,0.08),var(--bg-card) 40%);box-shadow:var(--shadow-glow)}
@@ -234,7 +230,6 @@ select.form-control{background-image:url("data:image/svg+xml,%3Csvg xmlns='http:
 .plan-feature{display:flex;align-items:flex-start;gap:10px;font-size:13.5px;color:var(--text-secondary)}
 .plan-feature i{color:var(--gold-500);font-size:12px;margin-top:4px;flex-shrink:0}
 
-/* TABLES */
 .table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;border-radius:var(--r-lg);border:1px solid var(--border);background:var(--bg-card)}
 table{width:100%;border-collapse:collapse;min-width:640px}
 th{text-align:left;padding:14px 20px;font-size:11px;font-weight:600;color:var(--text-muted);text-transform:uppercase;border-bottom:1px solid var(--border);background:var(--bg-glass);white-space:nowrap}
@@ -279,7 +274,6 @@ tbody tr.clickable:hover{background:var(--bg-hover)}
 .footer-col a:hover{color:var(--gold-500)}
 .footer-bottom{padding-top:28px;border-top:1px solid var(--border);text-align:center;font-size:12px;color:var(--text-muted)}
 
-/* AUTH */
 .auth-shell{min-height:calc(100vh - var(--header-h));display:grid;grid-template-columns:1fr 1fr}
 .auth-side{padding:56px;display:flex;flex-direction:column;justify-content:center;background:radial-gradient(ellipse 80% 60% at 20% 20%,rgba(201,169,97,0.08),transparent 60%),linear-gradient(160deg,var(--navy-900),var(--navy-800));border-right:1px solid var(--border)}
 [data-theme="light"] .auth-side{background:linear-gradient(160deg,#f1f5f9,#ffffff)}
@@ -295,7 +289,6 @@ tbody tr.clickable:hover{background:var(--bg-hover)}
 .auth-switch{text-align:center;font-size:13px;color:var(--text-muted);margin-top:22px}
 .auth-switch a{color:var(--gold-500);font-weight:500;cursor:pointer}
 
-/* APP SHELL */
 .app-shell{display:flex;min-height:100vh;background:var(--bg-primary)}
 .app-sidebar{width:256px;flex-shrink:0;background:var(--bg-secondary);border-right:1px solid var(--border);padding:16px 0;display:flex;flex-direction:column;position:sticky;top:0;height:100vh;overflow-y:auto;z-index:100}
 [data-theme="dark"] .app-sidebar{background:var(--navy-900)}
@@ -322,7 +315,6 @@ tbody tr.clickable:hover{background:var(--bg-hover)}
 .app-backdrop{display:none}
 .app-backdrop.show{display:block;position:fixed;inset:0;background:rgba(0,0,0,0.5);z-index:150;backdrop-filter:blur(4px)}
 
-/* WIDGETS */
 .widgets{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:22px}
 .widget{padding:20px;border-radius:var(--r-lg);background:var(--bg-card);border:1px solid var(--border)}
 .widget-label{font-size:11px;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.06em;margin-bottom:8px;display:flex;align-items:center;gap:5px}
@@ -332,7 +324,6 @@ tbody tr.clickable:hover{background:var(--bg-hover)}
 .widget-delta.down{color:var(--red-400)}
 .widget-delta.neutral{color:var(--text-muted)}
 
-/* MODAL / TOAST */
 .modal-root{position:fixed;inset:0;z-index:1000;display:none;align-items:center;justify-content:center;padding:16px}
 .modal-root.show{display:flex}
 .modal-backdrop{position:fixed;inset:0;background:rgba(4,11,24,0.7);backdrop-filter:blur(8px)}
@@ -422,11 +413,6 @@ tbody tr.clickable:hover{background:var(--bg-hover)}
 .spinner{width:16px;height:16px;border:2px solid rgba(255,255,255,0.3);border-top-color:currentColor;border-radius:50%;animation:spin 0.7s linear infinite;display:inline-block}
 @keyframes spin{to{transform:rotate(360deg)}}
 
-/* ============================================================
-   RESPONSIVE — THE REAL DEAL
-   ============================================================ */
-
-/* iPad landscape (1024px) */
 @media(max-width:1024px){
   .hero-grid{grid-template-columns:1fr;gap:40px}
   .hero{padding:40px 0 64px}
@@ -448,8 +434,6 @@ tbody tr.clickable:hover{background:var(--bg-hover)}
   .app-content{padding:16px}
   .app-topbar{padding:0 16px}
 }
-
-/* Tablet (768px) */
 @media(max-width:768px){
   .container{padding:0 18px}
   .section{padding:56px 0}
@@ -503,8 +487,6 @@ tbody tr.clickable:hover{background:var(--bg-hover)}
   .panel-grid{gap:12px;margin-bottom:16px}
   .cta-band .hero-cta .btn{width:100%}
 }
-
-/* Phone (480px) */
 @media(max-width:480px){
   body{font-size:14.5px}
   h1{font-size:1.6rem}
@@ -584,8 +566,6 @@ tbody tr.clickable:hover{background:var(--bg-hover)}
   .modal-foot .btn{flex:1;padding:10px 14px;font-size:13px}
   .asset-detail-hero{padding:14px 16px;gap:12px}
 }
-
-/* Small phone (390px) */
 @media(max-width:390px){
   .container{padding:0 12px}
   h1{font-size:1.45rem}
@@ -606,8 +586,6 @@ tbody tr.clickable:hover{background:var(--bg-hover)}
   .nav{height:56px;gap:8px}
   :root{--header-h:56px}
 }
-
-/* Tiny phone (320px) */
 @media(max-width:320px){
   .container{padding:0 10px}
   h1{font-size:1.35rem}
@@ -633,7 +611,7 @@ tbody tr.clickable:hover{background:var(--bg-hover)}
 <div class="toast-root" id="toastRoot"></div>
 
 <script>
-const STORE_KEY = 'aurelius_group_v4';
+const STORE_KEY = 'aurelius_group_v5';
 const BRAND = { name: 'Aurelius', full: 'Aurelius Group' };
 
 const DEFAULT_STATE = () => ({
@@ -663,7 +641,7 @@ const DEFAULT_STATE = () => ({
   messages: [],
   watchlist: [],
   plans: [
-    { id:'starter', name:'Starter', min:100,   desc:'For new investors getting started', risk:'Moderate', fee:'0.30%', investor:'Beginner', featured:false, active:true,
+    { id:'starter', name:'Starter', min:500,   desc:'For new investors getting started', risk:'Moderate', fee:'0.30%', investor:'Beginner', featured:false, active:true,
       features:['Basic portfolio tools','Full market access','Educational resources','Standard support'] },
     { id:'growth',  name:'Growth',  min:1000,  desc:'For investors building wealth over time', risk:'Moderate', fee:'0.25%', investor:'Intermediate', featured:true, active:true,
       features:['Advanced portfolio tools','Research tools','Portfolio analytics','Priority support'] },
@@ -688,6 +666,10 @@ function loadState(){
   } catch(e){ state = DEFAULT_STATE(); }
 }
 function saveState(){
+  if (state.user) {
+    const i = state.users.findIndex(x => x.id === state.user.id);
+    if (i >= 0) state.users[i] = { ...state.users[i], ...state.user };
+  }
   try{ localStorage.setItem(STORE_KEY, JSON.stringify(state)); } catch(e){}
 }
 function resetState(){
@@ -710,12 +692,13 @@ const holdingGainPct = (h) => h.avg ? ((calcPrice(h) - h.avg)/h.avg)*100 : 0;
 const portfolioValue = () => state.holdings.reduce((s,h)=>s+holdingValue(h),0);
 const investedValue = () => state.holdings.reduce((s,h)=>s+h.avg*h.shares,0);
 const availableCash = () => state.user ? state.user.balance : 0;
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 
 function toast(msg, type='success'){
   const el = document.createElement('div');
   el.className = 'toast ' + type;
   const icon = type==='success'?'fa-circle-check':type==='error'?'fa-circle-exclamation':'fa-circle-info';
-  el.innerHTML = `<i class="fas ${icon}"></i><span>${msg}</span>`;
+  el.innerHTML = `<i class="fas ${icon}"></i><span>${esc(msg)}</span>`;
   $('#toastRoot').appendChild(el);
   requestAnimationFrame(()=>el.classList.add('show'));
   setTimeout(()=>{el.classList.remove('show');setTimeout(()=>el.remove(),300)},3000);
@@ -723,11 +706,12 @@ function toast(msg, type='success'){
 
 function openModal({title, body, actions, size='', onOpen}){
   const root = $('#modalRoot');
+  document.removeEventListener('keydown', escClose);
   root.innerHTML = `
     <div class="modal-backdrop" data-close></div>
     <div class="modal ${size}">
       <div class="modal-head">
-        <h3>${title}</h3>
+        <h3>${esc(title)}</h3>
         <button class="modal-close" data-close aria-label="Close"><i class="fas fa-times"></i></button>
       </div>
       <div class="modal-body">${body}</div>
@@ -802,7 +786,15 @@ function applyTheme(){
   const meta = document.querySelector('meta[name="theme-color"]');
   if (meta) meta.content = state.theme === 'dark' ? '#060f1f' : '#f1f5f9';
 }
-function toggleTheme(){ state.theme = state.theme === 'dark' ? 'light' : 'dark'; saveState(); applyTheme(); }
+function toggleTheme(){
+  state.theme = state.theme === 'dark' ? 'light' : 'dark';
+  saveState(); applyTheme();
+  const dark = state.theme === 'dark';
+  $$('button i.fa-sun, button i.fa-moon').forEach(i => {
+    i.classList.toggle('fa-sun', dark);
+    i.classList.toggle('fa-moon', !dark);
+  });
+}
 
 function toggleMobileMenu(){
   const menu = $('#publicNavLinks');
@@ -816,7 +808,7 @@ function closeMobileMenu(){
 function renderHeader(){
   const route = currentRoute();
   const isAuthRoute = ['/login','/register','/forgot'].includes(route);
-  const isAppRoute = ['/dashboard','/portfolio','/app-markets','/investments','/watchlist','/transactions','/deposit','/withdraw','/transfer','/app-research','/messages','/notifications','/support','/profile','/settings','/security','/kyc','/onboarding','/2fa-setup'].includes(route) || route.startsWith('/article');
+  const isAppRoute = ['/dashboard','/portfolio','/app-markets','/investments','/watchlist','/transactions','/deposit','/withdraw','/app-research','/messages','/notifications','/support','/profile','/settings','/security','/kyc','/onboarding','/2fa-setup'].includes(route) || route.startsWith('/article');
   const headerEl = $('#public-header');
   const footerEl = $('#public-footer');
   if (isAuthRoute || isAppRoute) { headerEl.innerHTML=''; footerEl.innerHTML=''; return; }
@@ -836,10 +828,10 @@ function renderHeader(){
           ${links.map(([h,l])=>`<a href="#${h}" data-route="${h}" onclick="closeMobileMenu()">${l}</a>`).join('')}
         </div>
         <div class="nav-actions">
-          <button class="btn-icon" onclick="toggleTheme()" aria-label="Toggle theme"><i class="fas ${state.theme==='dark'?'fa-sun':'fa-moon'}"></i></button>
+          <button class="btn-icon" onclick="toggleTheme()" aria-label="Toggle theme"><i class="fas fa-moon"></i></button>
           ${state.user ? `<a href="#/dashboard" class="btn btn-primary">Dashboard</a>` : `
-            <a href="#/login" class="btn btn-ghost">Sign In</a>
-            <a href="#/register" class="btn btn-primary">Open Account</a>`}
+            <a href="#/register" class="btn btn-primary">Open Account</a>
+            <a href="#/login" class="btn btn-ghost">Sign In</a>`}
           <button class="menu-toggle" onclick="toggleMobileMenu()" aria-label="Menu"><i class="fas fa-bars"></i></button>
         </div>
       </nav>
@@ -920,7 +912,6 @@ const ROUTES = {
   '/transactions':     ()=>appShell('transactions','Transactions', pageTransactions()),
   '/deposit':          ()=>appShell('deposit','Deposit', pageDeposit()),
   '/withdraw':         ()=>appShell('withdraw','Withdraw', pageWithdraw()),
-  '/transfer':         ()=>appShell('transfer','Transfer', pageTransfer()),
   '/app-research':     ()=>appShell('research','Research', pageResearchApp()),
   '/messages':         ()=>appShell('messages','Messages', pageMessages()),
   '/notifications':    ()=>appShell('notifications','Notifications', pageNotifications()),
@@ -931,7 +922,7 @@ const ROUTES = {
   '/kyc':              ()=>appShell('kyc','Account Verification', pageKYC())
 };
 
-const PROTECTED = ['/dashboard','/portfolio','/app-markets','/investments','/watchlist','/transactions','/deposit','/withdraw','/transfer','/app-research','/messages','/notifications','/support','/profile','/settings','/security','/kyc','/onboarding','/2fa-setup'];
+const PROTECTED = ['/dashboard','/portfolio','/app-markets','/investments','/watchlist','/transactions','/deposit','/withdraw','/app-research','/messages','/notifications','/support','/profile','/settings','/security','/kyc','/onboarding','/2fa-setup'];
 
 function navigate(){
   const route = currentRoute();
@@ -959,10 +950,10 @@ function bindRoute(route){
   if (route === '/forgot') bindForgot();
   if (route === '/markets') bindMarketTabs();
   if (route === '/app-markets') bindMarketApp();
+  if (route === '/dashboard') bindDashboard();
   if (route === '/transactions') bindTransactionsApp();
   if (route === '/deposit') bindDeposit();
   if (route === '/withdraw') bindWithdraw();
-  if (route === '/transfer') bindTransfer();
   if (route === '/messages') bindMessages();
   if (route === '/2fa-setup') bind2FASetup();
   const sbToggle = $('#appSidebarToggle');
@@ -993,7 +984,6 @@ function appShell(active, title, content){
     { label:'Money', items:[
       { id:'deposit', href:'#/deposit', icon:'fa-arrow-down', label:'Deposit' },
       { id:'withdraw', href:'#/withdraw', icon:'fa-arrow-up', label:'Withdraw' },
-      { id:'transfer', href:'#/transfer', icon:'fa-right-left', label:'Transfer' },
       { id:'transactions', href:'#/transactions', icon:'fa-receipt', label:'Transactions' }
     ]},
     { label:'Research', items:[
@@ -1024,7 +1014,7 @@ function appShell(active, title, content){
       <div class="app-user">
         <div class="avatar">${initials.toUpperCase()}</div>
         <div class="app-user-info">
-          <div class="app-user-name">${u.first} ${u.last}</div>
+          <div class="app-user-name">${esc(u.first)} ${esc(u.last)}</div>
           <div class="app-user-role">Individual Investor</div>
         </div>
         <button class="btn-icon" onclick="logout()" title="Sign out"><i class="fas fa-arrow-right-from-bracket"></i></button>
@@ -1038,7 +1028,7 @@ function appShell(active, title, content){
         </div>
         <div class="app-topbar-actions">
           <a href="#/notifications" class="btn-icon" title="Notifications" style="position:relative"><i class="fas fa-bell"></i>${unreadNotifs?`<span style="position:absolute;top:0;right:0;background:var(--red-500);color:white;font-size:9px;padding:1px 5px;border-radius:100px;font-weight:600">${unreadNotifs}</span>`:''}</a>
-          <button class="btn-icon" onclick="toggleTheme()" title="Theme"><i class="fas ${state.theme==='dark'?'fa-sun':'fa-moon'}"></i></button>
+          <button class="btn-icon" onclick="toggleTheme()" title="Theme"><i class="fas fa-moon"></i></button>
         </div>
       </div>
       <div class="app-content">${content}</div>
@@ -1216,7 +1206,7 @@ function pageHome(){
       <div class="stat-strip-item"><div class="stat-strip-value">$2.4B</div><div class="stat-strip-label">Assets Managed</div></div>
       <div class="stat-strip-item"><div class="stat-strip-value">48,000</div><div class="stat-strip-label">Registered Users</div></div>
       <div class="stat-strip-item"><div class="stat-strip-value">12</div><div class="stat-strip-label">Markets Available</div></div>
-      <div class="stat-strip-item"><div class="stat-strip-value">15+</div><div class="stat-strip-label">Years of Experience</div></div>
+      <div class="stat-strip-item"><div class="stat-strip-value">10+</div><div class="stat-strip-label">Years of Experience</div></div>
     </div>
   </div>
 
@@ -1262,8 +1252,8 @@ function pageHome(){
       <div class="steps-grid">
         <div class="feature" onclick="location.hash='#/register'"><div class="feature-icon"><i class="fas fa-user-plus"></i></div><h3>1. Create account</h3><p>Sign up with your basic details in about two minutes.</p></div>
         <div class="feature" onclick="location.hash='#/2fa-setup'"><div class="feature-icon"><i class="fas fa-shield-halved"></i></div><h3>2. Set up 2FA</h3><p>Enable two-factor authentication from your security settings.</p></div>
-        <div class="feature" onclick="location.hash='#/deposit'"><div class="feature-icon"><i class="fas fa-arrow-down"></i></div><h3>3. Fund account</h3><p>Deposit via ACH, wire, or debit card with clear fees.</p></div>
-        <div class="feature" onclick="location.hash='#/plans'"><div class="feature-icon"><i class="fas fa-chart-line"></i></div><h3>4. Choose investments</h3><p>Pick a plan and start building your portfolio.</p></div>
+        <div class="feature" onclick="location.hash='#/deposit'"><div class="feature-icon"><i class="fas fa-arrow-down"></i></div><h3>3. Fund account</h3><p>Deposit via ACH, wire, or crypto with clear fees.</p></div>
+        <div class="feature" onclick="location.hash='#/plans'"><div class="feature-icon"><i class="fas fa-chart-line"></i></div><h3>4. Choose investments</h3><p>Define your investment approach, including retirement plans, and start building your portfolio.</p></div>
       </div>
     </div>
   </section>
@@ -1276,23 +1266,6 @@ function pageHome(){
         <p>Start small. Move up as your goals and confidence grow.</p>
       </div>
       ${plansMarkup()}
-    </div>
-  </section>
-
-  <section class="section-sm">
-    <div class="container">
-      <div class="section-head">
-        <span class="section-eyebrow">FAQ</span>
-        <h2>Common questions</h2>
-      </div>
-      <div class="faq-list">
-        ${faqItems().slice(0,5).map(([q,a])=>`
-          <div class="faq-item">
-            <div class="faq-q"><span>${q}</span><i class="fas fa-chevron-down"></i></div>
-            <div class="faq-a"><p>${a}</p></div>
-          </div>`).join('')}
-      </div>
-      <div style="text-align:center;margin-top:24px"><a href="#/faq" class="btn btn-ghost">View all questions <i class="fas fa-arrow-right"></i></a></div>
     </div>
   </section>
 
@@ -1325,7 +1298,7 @@ function pageAbout(){
         <div class="panel">
           <h3 style="font-family:var(--sans);margin-bottom:16px">By the numbers</h3>
           ${[
-            ['Founded','2011'],
+            ['Founded','2016'],
             ['Team size','120 employees'],
             ['Users','48,000'],
             ['Markets','12 asset classes']
@@ -1415,7 +1388,7 @@ function openAssetModal(sym){
         <div style="display:flex;gap:14px;align-items:center">
           <div class="asset-logo" style="background:${a.color};width:52px;height:52px;font-size:16px;border-radius:14px">${a.sym.slice(0,2)}</div>
           <div>
-            <div style="font-size:20px;font-weight:600">${a.name}</div>
+            <div style="font-size:20px;font-weight:600">${esc(a.name)}</div>
             <div class="text-sm text-muted">${a.sym} · ${a.cls}</div>
           </div>
         </div>
@@ -1519,8 +1492,8 @@ function pageHowItWorks(){
   const steps = [
     ['Create your account','Sign up with your basic details and set a strong password. Takes about two minutes.','#/register','fa-user-plus'],
     ['Set up two-factor authentication','Enable 2FA from your security settings for an extra layer of protection.','#/security','fa-shield-halved'],
-    ['Fund your account','Deposit via ACH, wire, or debit card. See fees and processing times before confirming.','#/deposit','fa-arrow-down'],
-    ['Choose investments','Pick a plan that matches your goals, and start building a diversified portfolio.','#/plans','fa-chart-line'],
+    ['Fund your account','Deposit via ACH, wire, or crypto. See fees and processing times before confirming.','#/deposit','fa-arrow-down'],
+    ['Choose investments','Define your investment approach, including retirement planning, and start building a diversified portfolio.','#/plans','fa-chart-line'],
     ['Monitor your portfolio','Track performance, holdings, and cash flow in your dashboard.','#/dashboard','fa-chart-pie']
   ];
   return `
@@ -1633,13 +1606,14 @@ function pageFees(){
           <thead><tr><th>Fee</th><th>Amount</th><th>When it applies</th></tr></thead>
           <tbody>
             <tr><td><strong>Account opening</strong></td><td>$0</td><td>Always free</td></tr>
-            <tr><td><strong>Monthly platform fee</strong></td><td>$0</td><td>No monthly maintenance fee</td></tr>
+            <tr><td><strong>Monthly platform fee</strong></td><td>0.003%</td><td>Applied monthly on assets</td></tr>
             <tr><td><strong>Advisory fee</strong></td><td>0.20%–0.30% annually</td><td>Based on plan</td></tr>
-            <tr><td><strong>Deposit fee — ACH</strong></td><td>$0</td><td>Bank transfers via ACH</td></tr>
-            <tr><td><strong>Deposit fee — Wire</strong></td><td>$15</td><td>Domestic incoming wires</td></tr>
-            <tr><td><strong>Withdrawal fee — ACH</strong></td><td>$0</td><td>Standard bank withdrawal</td></tr>
-            <tr><td><strong>Withdrawal fee — Wire</strong></td><td>$25</td><td>Domestic outgoing wires</td></tr>
-            <tr><td><strong>Trade commission</strong></td><td>$0</td><td>Stock and ETF trades</td></tr>
+            <tr><td><strong>Deposit fee — ACH</strong></td><td>0.005%</td><td>Bank transfers via ACH</td></tr>
+            <tr><td><strong>Deposit fee — Wire</strong></td><td>0.003%</td><td>Domestic incoming wires</td></tr>
+            <tr><td><strong>Deposit fee — Crypto</strong></td><td>0%</td><td>Cryptocurrency deposits</td></tr>
+            <tr><td><strong>Withdrawal fee — ACH</strong></td><td>0.015%</td><td>Standard bank withdrawal</td></tr>
+            <tr><td><strong>Withdrawal fee — Wire</strong></td><td>0.012%</td><td>Domestic outgoing wires</td></tr>
+            <tr><td><strong>Trade commission</strong></td><td>0.01%</td><td>Stock and ETF trades</td></tr>
           </tbody>
         </table>
       </div>
@@ -1679,14 +1653,13 @@ function pageSecurityInfo(){
 function faqItems(){
   return [
     ['What is Aurelius Group?','Aurelius Group is an investment platform that gives individual investors access to professional portfolio management tools, live market data, and educational resources.'],
-    ['What is the minimum to get started?','The Starter plan has a $100 minimum. Growth starts at $1,000 and Premium at $10,000.'],
+    ['What is the minimum to get started?','The Starter plan has a $500 minimum. Growth starts at $1,000 and Premium at $10,000.'],
     ['Are returns guaranteed?','No. All investing involves risk, including possible loss of principal. Past performance does not guarantee future results.'],
-    ['How do deposits work?','You can fund your account via ACH, wire, or debit card. Deposits are credited to your account according to the processing time of each method.'],
-    ['How long do withdrawals take?','ACH withdrawals typically settle in 1–3 business days. Wires are processed the same day if submitted before the cut-off time.'],
+    ['How do deposits work?','You can fund your account via ACH, wire, or crypto. Deposits are credited to your account according to the processing time of each method.'],
+    ['How fast do withdrawals take?','ACH withdrawals typically settle in 1–3 business days. Wires are processed the same day if submitted before the cut-off time.'],
     ['What is KYC?','KYC (Know Your Customer) is a standard identity verification process used by regulated financial institutions to verify your identity and protect the platform.'],
     ['How is my data protected?','We use industry-standard encryption in transit and at rest, alongside two-factor authentication and continuous monitoring.'],
     ['Do you offer financial advice?','Yes. Aurelius Group offers financial guidance and educational content to help you make informed investment decisions.'],
-    ['What markets can I access?','Stocks, ETFs, bonds, indices, and commodities are all available through the platform.'],
     ['Can I close my account?','Yes. You can close your account after settling any open positions.']
   ];
 }
@@ -2036,7 +2009,7 @@ function bindForgot(){
       openModal({
         title:'Reset link sent',
         body:`
-          <p style="margin-bottom:14px">If an account exists for <strong>${email}</strong>, we've sent a reset link.</p>
+          <p style="margin-bottom:14px">If an account exists for <strong>${esc(email)}</strong>, we've sent a reset link.</p>
           <div class="form-group mt-4"><label class="form-label">New password</label><input class="form-control" type="password" id="resetPw" placeholder="At least 8 characters"></div>`,
         actions: `<button class="btn btn-secondary" onclick="closeModal()">Close</button><button class="btn btn-primary" onclick="applyReset('${email.replace(/'/g,"&#39;")}')">Set New Password</button>`
       });
@@ -2082,15 +2055,15 @@ function onboardingStep(step){
       <h3 style="font-family:var(--sans);font-size:18px;margin-bottom:6px">Personal information</h3>
       <p class="text-sm text-muted" style="margin-bottom:18px">Confirm your basic details.</p>
       <div class="form-row">
-        <div class="form-group"><label class="form-label">First name</label><input class="form-control" id="obFirst" value="${state.user?.first||''}"></div>
-        <div class="form-group"><label class="form-label">Last name</label><input class="form-control" id="obLast" value="${state.user?.last||''}"></div>
+        <div class="form-group"><label class="form-label">First name</label><input class="form-control" id="obFirst" value="${esc(state.user?.first||'')}"></div>
+        <div class="form-group"><label class="form-label">Last name</label><input class="form-control" id="obLast" value="${esc(state.user?.last||'')}"></div>
       </div>
-      <div class="form-group"><label class="form-label">Phone number</label><input class="form-control" id="obPhone" value="${state.user?.phone||''}"></div>
-      <div class="form-group"><label class="form-label">Residential address</label><input class="form-control" id="obAddress" value="${state.user?.address||''}"></div>`;
+      <div class="form-group"><label class="form-label">Phone number</label><input class="form-control" id="obPhone" value="${esc(state.user?.phone||'')}"></div>
+      <div class="form-group"><label class="form-label">Residential address</label><input class="form-control" id="obAddress" value="${esc(state.user?.address||'')}"></div>`;
     case 2: return `
       <h3 style="font-family:var(--sans);font-size:18px;margin-bottom:6px">Investment experience</h3>
       <p class="text-sm text-muted" style="margin-bottom:18px">How familiar are you with investing?</p>
-      ${['New to investing','Some experience (1–3 years)','Experienced (3–10 years)','Very experienced (10+ years)'].map(opt=>`
+      ${['Beginner','Some experience','Experienced','Very experienced'].map(opt=>`
         <label class="form-check" style="padding:14px;border:1px solid ${ob.experience===opt?'var(--gold-500)':'var(--border-strong)'};border-radius:var(--r);background:var(--bg-glass);margin-bottom:10px;display:flex">
           <input type="radio" name="obExperience" value="${opt}" ${ob.experience===opt?'checked':''} onchange="obSet('experience',this.value)">
           <div><div style="font-weight:500;font-size:14px">${opt}</div></div>
@@ -2098,7 +2071,7 @@ function onboardingStep(step){
     case 3: return `
       <h3 style="font-family:var(--sans);font-size:18px;margin-bottom:6px">Financial goals</h3>
       <p class="text-sm text-muted" style="margin-bottom:18px">What are you investing for?</p>
-      ${['Build long-term wealth','Save for retirement','Grow short-term savings','Generate income'].map(opt=>`
+      ${['Build long-term wealth','Retirement planning','Grow short-term savings','Generate income'].map(opt=>`
         <label class="form-check" style="padding:14px;border:1px solid ${ob.goal===opt?'var(--gold-500)':'var(--border-strong)'};border-radius:var(--r);background:var(--bg-glass);margin-bottom:10px;display:flex">
           <input type="radio" name="obGoal" value="${opt}" ${ob.goal===opt?'checked':''} onchange="obSet('goal',this.value)">
           <div><div style="font-weight:500;font-size:14px">${opt}</div></div>
@@ -2106,7 +2079,7 @@ function onboardingStep(step){
     case 4: return `
       <h3 style="font-family:var(--sans);font-size:18px;margin-bottom:6px">Risk tolerance</h3>
       <p class="text-sm text-muted" style="margin-bottom:18px">How comfortable are you with market fluctuations?</p>
-      ${['Conservative — prefer stability','Moderate — some ups and downs','Aggressive — comfortable with volatility'].map(opt=>`
+      ${['Conservative','Moderate','Aggressive'].map(opt=>`
         <label class="form-check" style="padding:14px;border:1px solid ${ob.risk===opt?'var(--gold-500)':'var(--border-strong)'};border-radius:var(--r);background:var(--bg-glass);margin-bottom:10px;display:flex">
           <input type="radio" name="obRisk" value="${opt}" ${ob.risk===opt?'checked':''} onchange="obSet('risk',this.value)">
           <div><div style="font-weight:500;font-size:14px">${opt}</div></div>
@@ -2122,13 +2095,13 @@ function onboardingStep(step){
       </div>`;
     case 5: return `
       <h3 style="font-family:var(--sans);font-size:18px;margin-bottom:14px">Review information</h3>
-      <div class="review-row"><span class="label">Name</span><span>${state.user?.first||''} ${state.user?.last||''}</span></div>
-      <div class="review-row"><span class="label">Email</span><span>${state.user?.email||''}</span></div>
-      <div class="review-row"><span class="label">Phone</span><span>${state.user?.phone||'—'}</span></div>
-      <div class="review-row"><span class="label">Experience</span><span>${state.onboarding.experience||'—'}</span></div>
-      <div class="review-row"><span class="label">Goal</span><span>${state.onboarding.goal||'—'}</span></div>
-      <div class="review-row"><span class="label">Risk tolerance</span><span>${state.onboarding.risk||'—'}</span></div>
-      <div class="review-row"><span class="label">Holding period</span><span>${state.onboarding.horizon||'—'}</span></div>`;
+      <div class="review-row"><span class="label">Name</span><span>${esc(state.user?.first||'')} ${esc(state.user?.last||'')}</span></div>
+      <div class="review-row"><span class="label">Email</span><span>${esc(state.user?.email||'')}</span></div>
+      <div class="review-row"><span class="label">Phone</span><span>${esc(state.user?.phone||'—')}</span></div>
+      <div class="review-row"><span class="label">Experience</span><span>${esc(state.onboarding.experience||'—')}</span></div>
+      <div class="review-row"><span class="label">Goal</span><span>${esc(state.onboarding.goal||'—')}</span></div>
+      <div class="review-row"><span class="label">Risk tolerance</span><span>${esc(state.onboarding.risk||'—')}</span></div>
+      <div class="review-row"><span class="label">Holding period</span><span>${esc(state.onboarding.horizon||'—')}</span></div>`;
     case 6: return `
       <div style="text-align:center;padding:20px 0">
         <div style="width:72px;height:72px;border-radius:50%;background:rgba(16,185,129,0.12);border:2px solid rgba(16,185,129,0.3);display:grid;place-items:center;margin:0 auto 20px"><i class="fas fa-check" style="font-size:28px;color:var(--green-400)"></i></div>
@@ -2166,19 +2139,19 @@ function pageKYC(){
     <div class="panel">
       <div class="card-head">
         <div>
-          <h3>Account Verification</h3>
-          <p class="text-sm text-muted" style="margin-top:4px">Identity verification is currently unavailable.</p>
+          <h3>Upload Document</h3>
+          <p class="text-sm text-muted" style="margin-top:4px">Backend integration required for document processing.</p>
         </div>
-        <span class="pill pill-muted"><i class="fas fa-circle" style="font-size:8px"></i> Disabled</span>
+        <span class="pill pill-muted"><i class="fas fa-circle" style="font-size:8px"></i> Offline</span>
       </div>
       <div class="risk-banner" style="margin-top:14px">
         <i class="fas fa-circle-info"></i>
-        <div>Verification features are temporarily disabled. You can continue using the platform — deposits, investing, and portfolio management all work normally. We'll notify you when verification becomes available.</div>
+        <div>Document upload requires backend integration. This feature is currently offline. You can continue using the platform — deposits, investing, and portfolio management all work normally.</div>
       </div>
       <div class="kyc-steps" style="margin-top:20px">
-        <div class="kyc-step disabled"><div class="num">1</div><div><div class="kyc-step-label">Government ID</div><div class="kyc-step-sub">Unavailable</div></div></div>
-        <div class="kyc-step disabled"><div class="num">2</div><div><div class="kyc-step-label">Proof of address</div><div class="kyc-step-sub">Unavailable</div></div></div>
-        <div class="kyc-step disabled"><div class="num">3</div><div><div class="kyc-step-label">Selfie check</div><div class="kyc-step-sub">Unavailable</div></div></div>
+        <div class="kyc-step disabled"><div class="num">1</div><div><div class="kyc-step-label">Government ID</div><div class="kyc-step-sub">Requires backend</div></div></div>
+        <div class="kyc-step disabled"><div class="num">2</div><div><div class="kyc-step-label">Proof of address</div><div class="kyc-step-sub">Requires backend</div></div></div>
+        <div class="kyc-step disabled"><div class="num">3</div><div><div class="kyc-step-label">Selfie check</div><div class="kyc-step-sub">Requires backend</div></div></div>
       </div>
     </div>`;
 }
@@ -2221,7 +2194,7 @@ function page2FASetup(){
           </div>
           <div class="form-group">
             <label class="form-label">Phone number (for recovery)</label>
-            <input class="form-control" type="tel" id="tfPhone" placeholder="+1 (555) 010-0000" value="${state.user.phone||''}">
+            <input class="form-control" type="tel" id="tfPhone" placeholder="+1 (555) 010-0000" value="${esc(state.user.phone||'')}">
           </div>
           <div class="form-group">
             <label class="form-label">Verification code</label>
@@ -2348,7 +2321,7 @@ function pageDashboard(){
                 const a = findAsset(h.sym); if (!a) return '';
                 const val = holdingValue(h), g = holdingGain(h);
                 return `<tr class="clickable" onclick="openAssetModal('${h.sym}')">
-                  <td><div class="asset-cell"><div class="asset-logo" style="background:${a.color}">${a.sym.slice(0,2)}</div><div><div class="asset-name">${a.sym}</div><div class="asset-sym">${a.name.slice(0,22)}</div></div></div></td>
+                  <td><div class="asset-cell"><div class="asset-logo" style="background:${a.color}">${a.sym.slice(0,2)}</div><div><div class="asset-name">${a.sym}</div><div class="asset-sym">${esc(a.name.slice(0,22))}</div></div></div></td>
                   <td>${h.shares}</td>
                   <td>${money(a.price)}</td>
                   <td><strong>${money(val)}</strong></td>
@@ -2364,15 +2337,15 @@ function pageDashboard(){
         ${state.transactions.length === 0 ? emptyState('fa-receipt','No activity yet','Your transactions will appear here.','#/deposit','Make a deposit') : `
         <div style="display:flex;flex-direction:column">
           ${state.transactions.slice(0,5).map(t=>{
-            const iconMap = { Buy:'fa-arrow-down', Sell:'fa-arrow-up', Deposit:'fa-plus', Withdraw:'fa-minus', Dividend:'fa-coins', Fee:'fa-file-invoice-dollar', Transfer:'fa-right-left' };
-            const colorMap = { Buy:'var(--blue-400)', Sell:'var(--amber-500)', Deposit:'var(--green-400)', Withdraw:'var(--red-400)', Dividend:'var(--gold-500)', Fee:'var(--text-muted)', Transfer:'var(--purple-500)' };
+            const iconMap = { Buy:'fa-arrow-down', Sell:'fa-arrow-up', Deposit:'fa-plus', Withdraw:'fa-minus', Dividend:'fa-coins', Fee:'fa-file-invoice-dollar' };
+            const colorMap = { Buy:'var(--blue-400)', Sell:'var(--amber-500)', Deposit:'var(--green-400)', Withdraw:'var(--red-400)', Dividend:'var(--gold-500)', Fee:'var(--text-muted)' };
             return `<div style="display:flex;gap:12px;align-items:center;padding:10px 0;border-bottom:1px solid var(--border);cursor:pointer" onclick="openTransaction('${t.id}')">
               <div style="width:34px;height:34px;border-radius:10px;background:var(--bg-glass);display:grid;place-items:center;color:${colorMap[t.type]||'var(--text-muted)'}"><i class="fas ${iconMap[t.type]||'fa-circle'}"></i></div>
               <div style="flex:1;min-width:0">
                 <div style="font-size:13px;font-weight:500">${t.type} · ${t.asset}</div>
                 <div class="text-xs text-muted">${fmtDate(t.date)}</div>
               </div>
-              <div style="font-size:13px;font-weight:600;text-align:right">${['Withdraw','Sell','Fee','Transfer'].includes(t.type)?'-':'+'}${money(t.amount)}</div>
+              <div style="font-size:13px;font-weight:600;text-align:right">${['Withdraw','Sell','Fee'].includes(t.type)?'-':'+'}${money(t.amount)}</div>
             </div>`;
           }).join('')}
         </div>`}
@@ -2447,7 +2420,7 @@ function pagePortfolio(){
               const a = findAsset(h.sym); if (!a) return '';
               const val = holdingValue(h), g = holdingGain(h), gp = holdingGainPct(h);
               return `<tr class="clickable" onclick="openAssetModal('${h.sym}')">
-                <td><div class="asset-cell"><div class="asset-logo" style="background:${a.color}">${a.sym.slice(0,2)}</div><div><div class="asset-name">${a.name}</div><div class="asset-sym">${a.sym}</div></div></div></td>
+                <td><div class="asset-cell"><div class="asset-logo" style="background:${a.color}">${a.sym.slice(0,2)}</div><div><div class="asset-name">${esc(a.name)}</div><div class="asset-sym">${a.sym}</div></div></div></td>
                 <td><span class="pill pill-muted">${a.cls}</span></td>
                 <td>${h.shares}</td>
                 <td>${money(h.avg)}</td>
@@ -2505,7 +2478,7 @@ function renderMarketsTable(){
         const up = a.change>=0; const watched = state.watchlist.includes(a.sym);
         const data = series(24, 100, 1.4, up?0.15:-0.15);
         return `<tr class="clickable" onclick="openAssetModal('${a.sym}')">
-          <td><div class="asset-cell"><div class="asset-logo" style="background:${a.color}">${a.sym.slice(0,2)}</div><div><div class="asset-name">${a.name}</div><div class="asset-sym">${a.sym}</div></div></div></td>
+          <td><div class="asset-cell"><div class="asset-logo" style="background:${a.color}">${a.sym.slice(0,2)}</div><div><div class="asset-name">${esc(a.name)}</div><div class="asset-sym">${a.sym}</div></div></div></td>
           <td><span class="pill pill-muted">${a.cls}</span></td>
           <td><strong>$${a.price.toLocaleString('en-US',{minimumFractionDigits:2})}</strong></td>
           <td><span class="chg ${up?'up':'down'}"><i class="fas fa-arrow-${up?'up':'down'}"></i> ${pct(a.change)}</span></td>
@@ -2543,7 +2516,7 @@ function pageWatchlist(){
           ${items.map(a=>{
             const up = a.change>=0;
             return `<tr class="clickable" onclick="openAssetModal('${a.sym}')">
-              <td><div class="asset-cell"><div class="asset-logo" style="background:${a.color}">${a.sym.slice(0,2)}</div><div><div class="asset-name">${a.name}</div><div class="asset-sym">${a.sym}</div></div></div></td>
+              <td><div class="asset-cell"><div class="asset-logo" style="background:${a.color}">${a.sym.slice(0,2)}</div><div><div class="asset-name">${esc(a.name)}</div><div class="asset-sym">${a.sym}</div></div></div></td>
               <td><strong>$${a.price.toLocaleString('en-US',{minimumFractionDigits:2})}</strong></td>
               <td><span class="chg ${up?'up':'down'}">${pct(a.change)}</span></td>
               <td>${sparkline(series(20, 100, 1.5, up?0.15:-0.15), up?'#10b981':'#ef4444')}</td>
@@ -2570,7 +2543,7 @@ function pageInvestments(){
             const a = findAsset(h.sym); if (!a) return '';
             const g = holdingGain(h), gp = holdingGainPct(h);
             return `<tr class="clickable" onclick="openAssetModal('${h.sym}')">
-              <td><div class="asset-cell"><div class="asset-logo" style="background:${a.color}">${a.sym.slice(0,2)}</div><div><div class="asset-name">${a.name}</div><div class="asset-sym">${h.shares} shares</div></div></div></td>
+              <td><div class="asset-cell"><div class="asset-logo" style="background:${a.color}">${a.sym.slice(0,2)}</div><div><div class="asset-name">${esc(a.name)}</div><div class="asset-sym">${h.shares} shares</div></div></div></td>
               <td>${h.shares}</td>
               <td>${money(h.avg * h.shares)}</td>
               <td><strong>${money(holdingValue(h))}</strong></td>
@@ -2601,7 +2574,7 @@ function startInvestment(sym){
       <div class="asset-detail-hero" style="padding:14px 16px">
         <div style="display:flex;gap:12px;align-items:center">
           <div class="asset-logo" style="background:${a.color};width:44px;height:44px;border-radius:12px">${a.sym.slice(0,2)}</div>
-          <div><div style="font-weight:600">${a.name}</div><div class="text-xs text-muted">${a.sym} · $${a.price.toLocaleString('en-US',{minimumFractionDigits:2})}</div></div>
+          <div><div style="font-weight:600">${esc(a.name)}</div><div class="text-xs text-muted">${a.sym} · $${a.price.toLocaleString('en-US',{minimumFractionDigits:2})}</div></div>
         </div>
       </div>
       <div class="form-group">
@@ -2632,7 +2605,7 @@ function reviewInvestment(sym, amount){
   openModal({
     title: 'Review investment',
     body: `
-      <div class="review-row"><span class="label">Asset</span><span>${a.name} (${a.sym})</span></div>
+      <div class="review-row"><span class="label">Asset</span><span>${esc(a.name)} (${a.sym})</span></div>
       <div class="review-row"><span class="label">Order type</span><span>Market order</span></div>
       <div class="review-row"><span class="label">Shares</span><span>${shares.toFixed(4)}</span></div>
       <div class="review-row"><span class="label">Price per share</span><span>${money(a.price)}</span></div>
@@ -2683,7 +2656,7 @@ function pageDeposit(){
           <div class="form-group">
             <label class="form-label">Funding method</label>
             <div style="display:flex;flex-direction:column;gap:8px">
-              ${[['ach','Bank transfer (ACH)','Free · 1–3 business days'],['wire','Wire transfer','$15 fee · Same day if before 2 PM ET'],['debit','Debit card','Free · Instant']].map(([v,l,s],i)=>`
+              ${[['ach','Bank transfer (ACH)','0.005% · 1–3 business days'],['wire','Wire transfer','0.003% · Same day if before 2 PM ET'],['crypto','Cryptocurrency','0% · Network confirmation required']].map(([v,l,s],i)=>`
                 <label class="form-check" style="padding:12px 14px;border:1px solid var(--border-strong);border-radius:var(--r);background:var(--bg-glass)">
                   <input type="radio" name="depMethod" value="${v}" ${i===0?'checked':''} onchange="updateDeposit()">
                   <div style="flex:1"><div style="font-weight:500;font-size:13.5px">${l}</div><div class="text-xs text-muted">${s}</div></div>
@@ -2713,7 +2686,7 @@ function pageDeposit(){
         <div style="display:flex;flex-direction:column">
           ${state.transactions.filter(t=>t.type==='Deposit').slice(0,5).map(x=>`
             <div style="display:flex;justify-content:space-between;align-items:center;padding:10px 0;border-bottom:1px solid var(--border);cursor:pointer" onclick="openTransaction('${x.id}')">
-              <div><div style="font-size:13px;font-weight:500">${money(x.amount)}</div><div class="text-xs text-muted">${fmtDate(x.date)} · ${x.note||'Deposit'}</div></div>
+              <div><div style="font-size:13px;font-weight:500">${money(x.amount)}</div><div class="text-xs text-muted">${fmtDate(x.date)} · ${esc(x.note||'Deposit')}</div></div>
               <span class="pill ${x.status==='Completed'?'pill-green':x.status==='Pending'?'pill-amber':'pill-red'}">${x.status}</span>
             </div>`).join('')}
         </div>`}
@@ -2723,8 +2696,9 @@ function pageDeposit(){
 function updateDeposit(){
   const v = parseFloat($('#depAmount')?.value) || 0;
   const method = document.querySelector('input[name="depMethod"]:checked')?.value || 'ach';
-  const fee = method==='wire' ? 15 : 0;
-  const time = method==='ach' ? '1–3 business days' : method==='wire' ? 'Same day' : 'Instant';
+  const feePct = method==='wire' ? 0.00003 : method==='ach' ? 0.00005 : 0;
+  const fee = v * feePct;
+  const time = method==='ach' ? '1–3 business days' : method==='wire' ? 'Same day' : 'Network confirmation';
   if ($('#depAmtOut')) $('#depAmtOut').textContent = money(v);
   if ($('#depFeeOut')) $('#depFeeOut').textContent = money(fee);
   if ($('#depTimeOut')) $('#depTimeOut').textContent = time;
@@ -2737,12 +2711,13 @@ function bindDeposit(){
     const v = parseFloat($('#depAmount').value) || 0;
     if (v <= 0) { toast('Enter a valid amount','error'); return; }
     const method = document.querySelector('input[name="depMethod"]:checked')?.value || 'ach';
-    const fee = method==='wire' ? 15 : 0;
+    const feePct = method==='wire' ? 0.00003 : method==='ach' ? 0.00005 : 0;
+    const fee = v * feePct;
     openModal({
       title: 'Confirm Deposit',
       body: `
         <div class="review-row"><span class="label">Amount</span><span>${money(v)}</span></div>
-        <div class="review-row"><span class="label">Method</span><span>${method==='ach'?'ACH':method==='wire'?'Wire':'Debit card'}</span></div>
+        <div class="review-row"><span class="label">Method</span><span>${method==='ach'?'ACH':method==='wire'?'Wire':'Crypto'}</span></div>
         <div class="review-row"><span class="label">Fee</span><span>${money(fee)}</span></div>
         <div class="review-row total"><span class="label">Total</span><span>${money(v+fee)}</span></div>`,
       actions: `<button class="btn btn-secondary" onclick="closeModal()">Cancel</button><button class="btn btn-primary" onclick="finalizeDeposit(${v},${fee},'${method}')">Confirm</button>`
@@ -2770,8 +2745,8 @@ function pageWithdraw(){
           <div class="form-group">
             <label class="form-label">Destination</label>
             <select class="form-control" id="wMethod">
-              <option value="ach">Bank transfer (ACH) — Free · 1–3 business days</option>
-              <option value="wire">Wire transfer — $25 fee · Same day</option>
+              <option value="ach">Bank transfer (ACH) — 0.015% · 1–3 business days</option>
+              <option value="wire">Wire transfer — 0.012% · Same day</option>
             </select>
           </div>
           <div class="form-group">
@@ -2798,7 +2773,7 @@ function pageWithdraw(){
         <div style="display:flex;flex-direction:column">
           ${state.transactions.filter(t=>t.type==='Withdraw').slice(0,5).map(x=>`
             <div style="display:flex;justify-content:space-between;align-items:center;padding:10px 0;border-bottom:1px solid var(--border);cursor:pointer" onclick="openTransaction('${x.id}')">
-              <div><div style="font-size:13px;font-weight:500">${money(x.amount)}</div><div class="text-xs text-muted">${fmtDate(x.date)} · ${x.note||'Withdrawal'}</div></div>
+              <div><div style="font-size:13px;font-weight:500">${money(x.amount)}</div><div class="text-xs text-muted">${fmtDate(x.date)} · ${esc(x.note||'Withdrawal')}</div></div>
               <span class="pill ${x.status==='Completed'?'pill-green':x.status==='Pending'?'pill-amber':'pill-red'}">${x.status}</span>
             </div>`).join('')}
         </div>`}
@@ -2808,7 +2783,8 @@ function pageWithdraw(){
 function updateWithdraw(){
   const v = parseFloat($('#wAmount')?.value) || 0;
   const method = $('#wMethod')?.value || 'ach';
-  const fee = method==='wire' ? 25 : 0;
+  const feePct = method==='wire' ? 0.00012 : 0.00015;
+  const fee = v * feePct;
   const time = method==='ach' ? '1–3 business days' : 'Same day';
   if ($('#wAmtOut')) $('#wAmtOut').textContent = money(v);
   if ($('#wFeeOut')) $('#wFeeOut').textContent = money(fee);
@@ -2824,7 +2800,8 @@ function bindWithdraw(){
     if (v <= 0) { toast('Enter a valid amount','error'); return; }
     if (v > availableCash()) { toast('Insufficient balance','error'); return; }
     const method = $('#wMethod').value;
-    const fee = method==='wire' ? 25 : 0;
+    const feePct = method==='wire' ? 0.00012 : 0.00015;
+    const fee = v * feePct;
     openModal({
       title: 'Confirm Withdrawal',
       body: `
@@ -2847,69 +2824,8 @@ function finalizeWithdraw(amount, fee, method){
   navigate();
 }
 
-function pageTransfer(){
-  return `
-    <div class="panel" style="max-width:640px;margin:0 auto">
-      <h3 style="font-family:var(--sans);margin-bottom:6px">Transfer funds</h3>
-      <p class="text-sm text-muted" style="margin-bottom:16px">Send money between accounts.</p>
-      <form id="transferForm">
-        <div class="form-group">
-          <label class="form-label">Transfer type</label>
-          <select class="form-control" id="tType">
-            <option value="internal">To another Aurelius Group user</option>
-            <option value="external">To external bank account</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label class="form-label">Recipient</label>
-          <input class="form-control" id="tRecipient" placeholder="Email or account number" required>
-        </div>
-        <div class="form-group">
-          <label class="form-label">Amount (USD)</label>
-          <input class="form-control" type="number" id="tAmount" min="1" step="1" placeholder="0.00" required>
-          <div class="form-hint">Available: ${money(availableCash())}</div>
-        </div>
-        <div class="form-group">
-          <label class="form-label">Reference (optional)</label>
-          <input class="form-control" id="tNote" placeholder="What is this transfer for?">
-        </div>
-        <button class="btn btn-primary btn-block btn-lg" type="submit">Review Transfer</button>
-      </form>
-    </div>`;
-}
-function bindTransfer(){
-  $('#transferForm')?.addEventListener('submit', e=>{
-    e.preventDefault();
-    const v = parseFloat($('#tAmount').value) || 0;
-    if (v <= 0) { toast('Enter a valid amount','error'); return; }
-    if (v > availableCash()) { toast('Insufficient balance','error'); return; }
-    const recipient = $('#tRecipient').value;
-    const type = $('#tType').value;
-    const note = $('#tNote').value || 'Transfer';
-    openModal({
-      title: 'Review transfer',
-      body: `
-        <div class="review-row"><span class="label">Type</span><span>${type==='internal'?'Internal':'External bank'}</span></div>
-        <div class="review-row"><span class="label">Recipient</span><span>${recipient}</span></div>
-        <div class="review-row"><span class="label">Amount</span><span>${money(v)}</span></div>
-        <div class="review-row"><span class="label">Reference</span><span>${note}</span></div>`,
-      actions: `<button class="btn btn-secondary" onclick="closeModal()">Back</button><button class="btn btn-primary" onclick="finalizeTransfer(${v},'${recipient.replace(/'/g,"&#39;")}','${note.replace(/'/g,"&#39;")}')">Confirm Transfer</button>`
-    });
-  });
-}
-function finalizeTransfer(amount, recipient, note){
-  state.user.balance -= amount;
-  const t = { id:uid('T'), date:today(), type:'Transfer', asset:'—', amount, status:'Completed', note: `${recipient} — ${note}` };
-  state.transactions.unshift(t);
-  pushNotification({ title:'Transfer completed', desc:`${money(amount)} sent to ${recipient}.`, type:'success', page:'#/transactions' });
-  saveState();
-  closeModal();
-  toast('Transfer completed');
-  navigate();
-}
-
 function pageTransactions(){
-  const cats = ['All','Buy','Sell','Deposit','Withdraw','Dividend','Fee','Transfer'];
+  const cats = ['All','Buy','Sell','Deposit','Withdraw','Dividend','Fee'];
   return `
     <div class="panel">
       <div class="card-head">
@@ -2950,9 +2866,9 @@ function renderTransactions(){
           <td>${fmtDate(t.date)}</td>
           <td><span class="pill pill-muted">${t.type}</span></td>
           <td>${t.asset}</td>
-          <td class="${['Withdraw','Sell','Fee','Transfer'].includes(t.type)?'text-red':'text-green'}">${['Withdraw','Sell','Fee','Transfer'].includes(t.type)?'-':'+'}${money(t.amount)}</td>
+          <td class="${['Withdraw','Sell','Fee'].includes(t.type)?'text-red':'text-green'}">${['Withdraw','Sell','Fee'].includes(t.type)?'-':'+'}${money(t.amount)}</td>
           <td><span class="pill ${t.status==='Completed'?'pill-green':t.status==='Pending'?'pill-amber':t.status==='Failed'?'pill-red':'pill-muted'}">${t.status}</span></td>
-          <td class="text-muted text-sm">${t.note||''}</td>
+          <td class="text-muted text-sm">${esc(t.note||'')}</td>
         </tr>`).join('')}
     </tbody>
   </table></div>`;
@@ -2974,7 +2890,7 @@ function openTransaction(id){
       <div class="review-row"><span class="label">Asset</span><span>${t.asset}</span></div>
       <div class="review-row"><span class="label">Amount</span><span>${money(t.amount)}</span></div>
       <div class="review-row"><span class="label">Status</span><span><span class="pill ${t.status==='Completed'?'pill-green':t.status==='Pending'?'pill-amber':'pill-red'}">${t.status}</span></span></div>
-      <div class="review-row"><span class="label">Note</span><span>${t.note||'—'}</span></div>`,
+      <div class="review-row"><span class="label">Note</span><span>${esc(t.note||'—')}</span></div>`,
     actions: `<button class="btn btn-secondary" onclick="closeModal()">Close</button>`
   });
 }
@@ -2994,7 +2910,7 @@ function pageMessages(){
       <div class="msg-thread" id="msgThread">
         ${state.messages.length === 0 ? `<div style="text-align:center;padding:40px 20px;color:var(--text-muted);font-size:13.5px">Start a conversation with our support team.</div>` : state.messages.map(m=>`
           <div class="msg ${m.from === 'user' ? 'user' : 'support'}">
-            ${m.text}
+            ${esc(m.text)}
             <span class="msg-time">${m.time}</span>
           </div>`).join('')}
       </div>
@@ -3020,7 +2936,7 @@ function sendMessage(){
     const lower = v.toLowerCase();
     let reply = "Thanks for reaching out! A member of our team will follow up shortly.";
     if (lower.includes('withdraw')) reply = "ACH withdrawals settle in 1–3 business days and wires within the same day.";
-    else if (lower.includes('deposit')) reply = "You can fund your account via ACH, wire, or debit card.";
+    else if (lower.includes('deposit')) reply = "You can fund your account via ACH, wire, or crypto.";
     else if (lower.includes('2fa') || lower.includes('two factor')) reply = "You can set up two-factor authentication from your Security page.";
     else if (lower.includes('fee')) reply = "Our fee schedule is transparent. Advisory fees range from 0.20% to 0.30% annually.";
     else if (lower.includes('hello') || lower.includes('hi')) reply = "Hello! How can I help you today?";
@@ -3047,8 +2963,8 @@ function pageNotifications(){
         <div class="notif-item ${!n.read?'unread':''}" onclick="openNotification('${n.id}')">
           <div class="notif-icon" style="background:${bgMap[n.type]||bgMap.info};color:${colorMap[n.type]||colorMap.info}"><i class="fas ${iconMap[n.type]||iconMap.info}"></i></div>
           <div class="notif-content">
-            <div class="notif-title">${n.title}</div>
-            <div class="notif-desc">${n.desc}</div>
+            <div class="notif-title">${esc(n.title)}</div>
+            <div class="notif-desc">${esc(n.desc)}</div>
             <div class="notif-time">${n.time}</div>
           </div>
           ${!n.read?'<div class="notif-dot"></div>':''}
@@ -3062,7 +2978,7 @@ function openNotification(id){
   const n = state.notifications.find(x=>x.id===id); if (!n) return;
   n.read = true;
   saveState();
-  if (n.page) location.hash = n.page; else navigate();
+  if (n.page && n.page !== location.hash) location.hash = n.page; else navigate();
 }
 function markAllRead(){
   state.notifications.forEach(n=>n.read=true);
@@ -3081,7 +2997,7 @@ function pageSupport(){
           ${userTickets.length === 0 ? emptyState('fa-headset','No support tickets',"Open a ticket and we'll get back to you.",'#','') : userTickets.map(t=>`
             <div style="padding:14px;border-radius:var(--r);background:var(--bg-glass);border:1px solid var(--border);cursor:pointer" onclick="openTicketDetail('${t.id}')">
               <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:10px;margin-bottom:6px">
-                <div style="font-weight:500;font-size:13.5px">${t.subject}</div>
+                <div style="font-weight:500;font-size:13.5px">${esc(t.subject)}</div>
                 <span class="pill ${t.status==='Open'?'pill-amber':t.status==='In Progress'?'pill-blue':'pill-green'}">${t.status}</span>
               </div>
               <div class="text-xs text-muted">${t.id} · ${t.priority} priority · ${fmtDate(t.date)}</div>
@@ -3137,7 +3053,7 @@ function openTicketDetail(id){
         <span class="pill pill-muted">${fmtDate(t.date)}</span>
       </div>
       <div class="msg-thread" style="background:transparent;padding:0;gap:10px">
-        ${t.messages.map(m=>`<div class="msg ${m.from==='user'?'user':'support'}">${m.text}<span class="msg-time">${m.time}</span></div>`).join('')}
+        ${t.messages.map(m=>`<div class="msg ${m.from==='user'?'user':'support'}">${esc(m.text)}<span class="msg-time">${m.time}</span></div>`).join('')}
       </div>
       <div class="form-group mt-4"><label class="form-label">Add a reply</label><textarea class="form-control" id="ticketReply" rows="3" placeholder="Type your reply..."></textarea></div>`,
     actions: `<button class="btn btn-secondary" onclick="closeModal()">Close</button><button class="btn btn-primary" onclick="replyTicket('${t.id}')">Send Reply</button>`
@@ -3162,18 +3078,18 @@ function pageProfile(){
       <div class="panel">
         <h3 style="font-family:var(--sans);margin-bottom:16px">Personal information</h3>
         <div class="form-row">
-          <div class="form-group"><label class="form-label">First name</label><input class="form-control" id="pFirst" value="${u.first}"></div>
-          <div class="form-group"><label class="form-label">Last name</label><input class="form-control" id="pLast" value="${u.last}"></div>
+          <div class="form-group"><label class="form-label">First name</label><input class="form-control" id="pFirst" value="${esc(u.first)}"></div>
+          <div class="form-group"><label class="form-label">Last name</label><input class="form-control" id="pLast" value="${esc(u.last)}"></div>
         </div>
         <div class="form-row">
-          <div class="form-group"><label class="form-label">Email</label><input class="form-control" value="${u.email}" disabled></div>
-          <div class="form-group"><label class="form-label">Phone</label><input class="form-control" id="pPhone" value="${u.phone||''}"></div>
+          <div class="form-group"><label class="form-label">Email</label><input class="form-control" value="${esc(u.email)}" disabled></div>
+          <div class="form-group"><label class="form-label">Phone</label><input class="form-control" id="pPhone" value="${esc(u.phone||'')}"></div>
         </div>
         <div class="form-row">
-          <div class="form-group"><label class="form-label">Date of birth</label><input class="form-control" type="date" id="pDob" value="${u.dob||''}"></div>
-          <div class="form-group"><label class="form-label">Country</label><input class="form-control" id="pCountry" value="${u.country||''}"></div>
+          <div class="form-group"><label class="form-label">Date of birth</label><input class="form-control" type="date" id="pDob" value="${esc(u.dob||'')}"></div>
+          <div class="form-group"><label class="form-label">Country</label><input class="form-control" id="pCountry" value="${esc(u.country||'')}"></div>
         </div>
-        <div class="form-group"><label class="form-label">Residential address</label><input class="form-control" id="pAddress" value="${u.address||''}"></div>
+        <div class="form-group"><label class="form-label">Residential address</label><input class="form-control" id="pAddress" value="${esc(u.address||'')}"></div>
         <button class="btn btn-primary" onclick="saveProfile()"><i class="fas fa-save"></i> Save Changes</button>
       </div>
 
@@ -3188,10 +3104,10 @@ function pageProfile(){
         </div>
         <div class="panel">
           <h3 style="font-family:var(--sans);margin-bottom:14px">Investment profile</h3>
-          <div class="review-row"><span class="label">Experience</span><span>${state.onboarding.experience||'—'}</span></div>
-          <div class="review-row"><span class="label">Goal</span><span>${state.onboarding.goal||'—'}</span></div>
-          <div class="review-row"><span class="label">Risk tolerance</span><span>${state.onboarding.risk||'—'}</span></div>
-          <div class="review-row"><span class="label">Holding period</span><span>${state.onboarding.horizon||'—'}</span></div>
+          <div class="review-row"><span class="label">Experience</span><span>${esc(state.onboarding.experience||'—')}</span></div>
+          <div class="review-row"><span class="label">Goal</span><span>${esc(state.onboarding.goal||'—')}</span></div>
+          <div class="review-row"><span class="label">Risk tolerance</span><span>${esc(state.onboarding.risk||'—')}</span></div>
+          <div class="review-row"><span class="label">Holding period</span><span>${esc(state.onboarding.horizon||'—')}</span></div>
           <button class="btn btn-secondary btn-sm mt-4" onclick="location.hash='#/onboarding'">Update preferences</button>
         </div>
       </div>
@@ -3301,8 +3217,8 @@ function pageSecuritySettings(){
               <div style="display:flex;gap:12px;min-width:0">
                 <div style="width:34px;height:34px;border-radius:10px;background:var(--bg-glass);display:grid;place-items:center;flex-shrink:0;color:var(--text-muted)"><i class="fas fa-laptop"></i></div>
                 <div style="min-width:0">
-                  <div style="font-size:13px;font-weight:500">${s.device}</div>
-                  <div class="text-xs text-muted">${s.loc}</div>
+                  <div style="font-size:13px;font-weight:500">${esc(s.device)}</div>
+                  <div class="text-xs text-muted">${esc(s.loc)}</div>
                   <div class="text-xs" style="color:${s.current?'var(--green-400)':'var(--text-muted)'};margin-top:2px">${s.current?'● Current session':s.time}</div>
                 </div>
               </div>
